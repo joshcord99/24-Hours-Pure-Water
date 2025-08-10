@@ -1,0 +1,161 @@
+.reviews-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.business-rating-summary {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
+  border-radius: 16px;
+  color: white;
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.overall-rating {
+  font-size: 2rem;
+  color: var(--yellow);
+  letter-spacing: 3px;
+}
+
+.rating-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.review-count {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.review-card {
+  background: var(--light-gray);
+  padding: 30px;
+  border-radius: 16px;
+  border-left: 4px solid var(--primary-blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 5px;
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 5px;
+}
+
+.verified-badge {
+  font-size: 0.8rem;
+  color: var(--green);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review-rating {
+  margin-left: 20px;
+}
+
+.stars {
+  color: var(--yellow);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.review-comment {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin: 0;
+}
+
+.reviews-cta {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 60px 0;
+  }
+
+  .business-rating-summary {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .overall-rating {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .rating-text {
+    font-size: 1.1rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-card {
+    padding: 20px 15px;
+  }
+
+  .review-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .review-rating {
+    margin-left: 0;
+  }
+
+  .reviewer-name {
+    font-size: 1.1rem;
+  }
+
+  .stars {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}
